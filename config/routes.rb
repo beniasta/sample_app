@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+  get 'users/show'
+
+  devise_for :users
   # get 'static_pages/home'
+  
   root 'static_pages#home'
+  
+  resources :users, only: [:show]
+  
+ 
   # get 'static_pages/help'
   
   # get 'static_pages/about'

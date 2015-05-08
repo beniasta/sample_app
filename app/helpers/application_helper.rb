@@ -22,5 +22,6 @@ module ApplicationHelper
         "alert-info"
       else
         flash_type.to_s
-
+    end
+  end
 end
