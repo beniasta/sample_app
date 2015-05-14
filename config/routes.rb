@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   
   resources :users, only: [:show]
   
- 
+
   # get 'static_pages/help'
   
   # get 'static_pages/about'
@@ -21,8 +21,7 @@ Rails.application.routes.draw do
   match '/contact', to: 'static_pages#contact',  via: 'get'
   
   
- 
-
+end
   
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -79,4 +78,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
